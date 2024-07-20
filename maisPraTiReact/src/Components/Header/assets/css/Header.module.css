@@ -1,5 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 header{
     width: 100vw;
     background-color: black;
-    height: 10rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-family: "Oswald", sans-serif;
 }
+
+img{
+    width: 15rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+
+nav ul a{
+   text-decoration: none;
+   color: rgb(216, 2, 2);
+   font-size: 1.5rem;
+   transition: 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+
+nav ul a:hover{
+    color:rgb(255, 0, 0)
+ }
+
+
+ @media screen and (max-width: 1272px) {
+    img{
+        width: 12rem;
+    }
+
+    nav ul a{
+        font-size: 1.2rem;
+     }
+ }
+
+ @media screen and (max-width: 991px) {
+    img{
+        width: 10rem;
+    }
+
+    nav ul a{
+        font-size: 1rem;
+     }
+ }
+
+ @media screen and (max-width: 804px) {
+    header{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 2rem;
+        justify-content: space-evenly;
+        width: 80vw;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    nav {
+        display: none;
+     }
+ }
